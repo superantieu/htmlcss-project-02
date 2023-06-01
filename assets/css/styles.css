@@ -466,6 +466,7 @@ nav a:hover,
     margin-top: 135px;
     padding: 96px 0;
     background: #fffcf4;
+    transition: all 0.5s ease;
 }
 .blog .blog-top {
     text-align: center;
@@ -482,6 +483,17 @@ nav a:hover,
     gap: 30px;
     margin-top: 55px;
     overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.list-left {
+    display: none;
+    transition: all 0.5s ease;
+}
+.list-left.active {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
 }
 .blog .item {
     flex-shrink: 0; /* Không bị nén lại */
@@ -550,14 +562,14 @@ nav a:hover,
     gap: 6px;
     margin-top: 38px;
 }
-.blog .dot {
+.blog .dotdot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: #5f5b53;
     cursor: pointer;
 }
-.blog .dot.active {
+.blog .dotdot.active {
     background: var(--primary-color);
     cursor: default;
 }
